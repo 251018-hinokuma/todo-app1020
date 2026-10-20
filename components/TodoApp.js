@@ -55,7 +55,7 @@ export default function TodoApp() {
       <TodoList todos={visibleTodos} onToggle={toggleTodo} onDelete={deleteTodo} />
       {todos.length > 0 && (
         <p>
-          全 {todos.length} 件 / 完了 {doneCount} 件 / 残り {remaining} 件
+          全 {todos.length} 件  　/　  完了 {doneCount} 件  　/　  残り {remaining} 件
         </p>
       )}
       <button onClick={clearDone} disabled={doneCount === 0}>
