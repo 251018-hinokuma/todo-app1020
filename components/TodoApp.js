@@ -60,8 +60,9 @@ export default function TodoApp() {
       <TodoFilter value={filter} onChange={setFilter} />
       <TodoList todos={visibleTodos} onToggle={toggleTodo} onDelete={deleteTodo} />
       {todos.length > 0 && (
-        <p>
-          全 {todos.length} 件 / 完了 {doneCount} 件 / 残り {remaining} 件
+
+        <p style={{ color: 'gray' }}>
+          全 {todos.length} 件  　/　  完了 {doneCount} 件  　/　  残り {remaining} 件
 
         </p>
       )}
